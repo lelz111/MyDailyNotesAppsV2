@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/background_light">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat datang!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apa yang ingin Anda lakukan hari ini?"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="32dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_new_note"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="📝 Buat Catatan Baru"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_primary"
+            android:textColor="@android:color/white"
+            android:drawableStart="@drawable/ic_add"
+            android:drawablePadding="12dp" />
+
+        <Button
+            android:id="@+id/btn_view_notes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="📋 Lihat Catatan"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_secondary"
+            android:textColor="@color/design_default_color_primary"
+            android:drawableStart="@drawable/ic_list"
+            android:drawablePadding="12dp" />
+
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="👤 Profil"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_secondary"
+            android:textColor="@color/design_default_color_primary"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="12dp" />
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="ℹ️ Tentang Aplikasi"
+            android:textSize="18sp"
+            android:background="@drawable/button_secondary"
+            android:textColor="@color/design_default_color_primary"
+            android:drawableStart="@drawable/ic_info"
+            android:drawablePadding="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
